@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<header th:replace="header::head"></header>	
+	<body>
+	<h1>index page</h1>
+	<div class="container mt-3">
+		<div th:if="${isloginError}" >
+			<div th:replace="login-error::error"></div>
+		</div>
+		<div th:replace="footer::footer"></div>
+		</div>
+	</body>
+</html>
